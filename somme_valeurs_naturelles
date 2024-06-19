@@ -1,0 +1,26 @@
+n = int(input("entrez le premier nombre"))
+
+total = 0
+if n == 0:
+    print("0")
+    print("aucune valeur à sommer")
+
+if n > 0:
+    for i in range(n):
+        number_to_add = int(input("Entrez un nombre à additionner"))
+        if i == n:
+            break
+        total += number_to_add
+    print(total)
+
+
+if n == -1:
+    while True:
+        number_to_add = input("Entrez un nombre à additionner")
+        if number_to_add == 'F':
+            break
+
+        print('F')
+        total += int(number_to_add)
+    print(total)
+
